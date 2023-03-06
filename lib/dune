@@ -1,5 +1,6 @@
 (library
- (name lib)
+ (public_name ocason)
+ (name ocason)
  (libraries menhirLib sedlex)
  (preprocess
   (pps sedlex.ppx ppx_deriving.show ppx_deriving.eq)))
