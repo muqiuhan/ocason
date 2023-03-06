@@ -1,8 +1,9 @@
 (library
-  (name lib)
-  (libraries menhirLib sedlex)
-  (preprocess (pps sedlex.ppx ppx_deriving.show ppx_deriving.eq)))
+ (name lib)
+ (libraries menhirLib sedlex)
+ (preprocess
+  (pps sedlex.ppx ppx_deriving.show ppx_deriving.eq)))
 
-(menhir 
-  (flags --explain)
-  (modules parser))
+(menhir
+ (flags --explain)
+ (modules parser))
